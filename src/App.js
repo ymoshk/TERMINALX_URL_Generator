@@ -47,7 +47,7 @@ const App = () => {
             return settings.url + '/' + code +
                 '?utm_source=' + settings.source +
                 '&utm_medium=' + settings.medium +
-                'utm_campaign=' + settings.name;
+                '&utm_campaign=' + settings.name;
         } else {
             return undefined;
         }
