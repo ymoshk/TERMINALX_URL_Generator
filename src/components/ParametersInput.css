@@ -1,0 +1,18 @@
+label {
+    font-weight: bold;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.buttonsRow {
+    margin-top: 10px;
+}
+
+.urlInput {
+    margin: 0 15px 0 15px;
+}
