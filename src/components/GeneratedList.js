@@ -14,7 +14,7 @@ const GeneratedList = (props) => {
     const onRemoveAllHandler = () => {
         props.onListUpdated([]);
     }
-    
+
     const buildList = () => {
         let result = (
             <Card header={"Results"} className={"container offset-md-2 col-md-8"}>
@@ -35,7 +35,7 @@ const GeneratedList = (props) => {
                 {values.map(generatedValue =>
                     <GeneratedElement key={generatedValue} generatedValue={generatedValue}
                                       onDeleteGeneratedElement={onDeleteHandler}/>
-                )};
+                )}
             </Card>
         )
 

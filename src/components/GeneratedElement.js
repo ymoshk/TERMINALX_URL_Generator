@@ -6,6 +6,7 @@ import './GeneratedElement.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTrashAlt} from '@fortawesome/free-solid-svg-icons'
 import {faCopy} from '@fortawesome/free-solid-svg-icons'
+import ReactTooltip from 'react-tooltip';
 
 const GeneratedElement = (props) => {
     const [generatedValue] = useState(props.generatedValue);
@@ -17,7 +18,10 @@ const GeneratedElement = (props) => {
     return (
         <div className={"elementRow row"}>
             <div className={"col-8 col-sm-10"}>
-                <input type={"text"} readOnly={true} value={generatedValue}/>
+                <a data-tip={generatedValue}>
+                    <ReactTooltip place="top" type="dark" effect="solid"/>
+                    <input type={"text"} readOnly={true} value={generatedValue}/>
+                </a>
             </div>
             <div className={"col-2 col-sm-1"}>
                 <button value={generatedValue} className={"btn btn-danger btn-sm"}
